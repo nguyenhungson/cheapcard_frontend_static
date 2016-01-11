@@ -1,0 +1,215 @@
+/*Reset style*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-size: 100%;
+	outline: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+ol, ul {list-style: none;}
+ol li{display:list-item;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+caption, tbody, tfoot, thead, tr, th, td{vertical-align:top;}
+img{vertical-align:bottom;}
+
+body{font-family:Arial,Tahoma,Helvetica,sans-serif; font-size:13px; line-height:20px; color:#404040; background:#fff; position:relative;}
+
+a{color:#0098db; text-decoration:none;}
+a:hover{color:#0098db;}
+ol li{display:list-item;list-style:decimal;}
+input,textfield,select,textarea{border:1px solid #ccc;font-family:Arial,Tahoma,Helvetica,sans-serif; border-radius:3px; padding:5px;}
+input:focus, textarea:focus{border-color:#43b649;}
+input[type=checkbox],input[type=radio]{border:0 none;vertical-align:middle;}
+.clr{clear:both;display:block;line-height:0;font-size:0;}
+.clearfix {*zoom: 1;}
+.clearfix:after,.clearfix:before{content:"";display:table;clear:both;}
+.fl{float:left;}
+.fr{float:right;}
+
+.sprt{background-image:url(../images/sprt.png); background-repeat:no-repeat;}
+.sprt.icohome{width:24px; height:24px; background-position:0 0; display:inline-block; margin-top:10px;}
+.sprt.icohome:hover, .menu ul li a.current .sprt.icohome{background-position:-32px 0; }
+.sprtcard{background-image:url(../images/sprt_card.png); background-repeat:no-repeat;}
+.logocard{width:150px; height:60px; display:block; margin-top:15px; margin-left:8px;}
+.logocard.viettel{background-position:23px 2px;}
+.logocard.mobifone{background-position:3px -62px;}
+.logocard.vinaphone{background-position:0 -118px;}
+.logocard.vietnamobile{background-position:25px -182px;}
+.logocard.gmobile{background-position:0 -250px;}
+.logocard.zing{background-position:20px -315px;}
+.logocard.garena{background-position:45px -384px;}
+.logocard.vtc{background-position:10px -476px;}
+.logocard.gate{background-position:18px -548px;}
+.logocard.ongame{background-position:0 -615px;}
+.logocard.mobay{background-position:0 -684px;}
+.logocard.zxu{background-position:45px -752px;}
+.icoarrowpre, .icoarrownext{width:10px; height:18px; display:inline-block;}
+.icoarrowpre.dis{background-position:-64px 0;}
+.icoarrowpre{background-position:-80px 0;}
+.icoarrowpre:hover, .icoarrownext:hover{opacity:0.6;}
+.icoarrownext.dis{background-position:-96px 0;}
+.icoarrownext{background-position:-112px 0;}
+.logobct{width:134px; height:50px; display:block; background-position:-128px 0;}
+.labeldis{width:76px; height:48px; position:absolute; top:-4px; right:-8px; background-position:0 -48px;}
+.labelpro{width:130px; height:40px; position:absolute; bottom:-12px; left:-4px; background-position:-96px -64px;}
+.icolocalpath{width:5px; height:7px; margin:0 8px; background-position:-272px 0; display:inline-block;}
+.icocheck, .icoincorrect{width:30px; height:30px; display:inline-block; margin:0 5px; vertical-align:-10px;}
+.icocheck{background-position:-240px -64px;}
+.icoincorrect{background-position:-240px -96px;}
+.icodecrease, .icoincrease{width:46px; height:46px; display:block;}
+.icodecrease{background-position:0 -112px;}
+.icodecrease:hover{background-position:0 -176px;}
+.icodecrease.dis{background-position:-128px -112px; cursor:default;}
+.icoincrease{background-position:-64px -112px;}
+.icoincrease:hover{background-position:-64px -176px;}
+.icoselcard{width:32px;height:32px; background-position:-240px -128px; position:absolute; top:3px; right:3px;}
+.logonetwork{width:140px; height:34px; display:block; background-position:-128px -176px;}
+.sprtbank{background-image:url(../images/sprt_bank.png); background-repeat:no-repeat;}
+.logobank{width:82px; height:30px; display:block; margin:10% 14%;}
+.logobank.vietcombank{background-position:0px 0px}
+.logobank.donga{background-image: url(../images/banks/donga.png);background-size: cover;}
+.logobank.agribank{background-image: url(../images/banks/agribank.png);background-size: cover;}
+.logobank.techcom{background-image: url(../images/banks/techcom.png);background-size: cover;}
+.logobank.eximbank{background-image: url(../images/banks/eximbank.png);background-size: cover;}
+.logobank.sacombank{background-image: url(../images/banks/sacombank.png);background-size: cover;}
+.logobank.vib{background-image: url(../images/banks/vib.png);background-size: cover;}
+.logobank.bidv{background-image: url(../images/banks/bidv.png);background-size: cover;}
+.logobank.mb{background-image: url(../images/banks/mb.png);background-size: cover;}
+.logobank.acb{background-image: url(../images/banks/acb.png);background-size: cover;}
+.logobank.maritime{background-image: url(../images/banks/maritime.png);background-size: cover;}
+.logobank.gpbank{background-image: url(../images/banks/gpbank.png);background-size: cover;}
+.logobank.hdbank{background-image: url(../images/banks/hdbank.png);background-size: cover;}
+.logobank.navibank{background-image: url(../images/banks/navibank.png);background-size: cover;}
+.logobank.vieta{background-image: url(../images/banks/vieta.png);background-size: cover;}
+.logobank.vpbank{background-image: url(../images/banks/vpbank.png);background-size: cover;}
+.logobank.baca{background-image: url(../images/banks/bacabank.png);background-size: cover;}
+.logobank.ocean{background-image: url(../images/banks/oceanbank.png);background-size: cover;}
+.logobank.anbinh{background-image: url(../images/banks/abbank.png);background-size: cover;}
+.logobank.nama{background-image: url(../images/banks/nama.png);background-size: cover;}
+.logobank.saigonbank{background-image: url(../images/banks/saigonbank.png);background-size: cover;}
+.logobank.pgbank{background-image: url(../images/banks/pgbank.png);background-size: cover;}
+.logobank.ocb{background-image: url(../images/banks/ocb.png);background-size: cover;}
+.logobank.daia{background-image: url(../images/banks/daia.png);background-size: cover;}
+.logobank.tienphong{background-image: url(../images/banks/tpbank.png);background-size: cover;}
+.logobank.visa{background-image: url(../images/banks/visa.png);background-size: cover;}
+.logobank.vtb{background-image: url(../images/banks/vietin.png);background-size: cover;}
+
+.row .logocard{margin:0;}
+.logocard.network{width:90px; height:34px; background-size:108px}
+.logocard.network.viettel{margin-left:-25px;}
+.logocard.network.mobifone{background-position:0 -35px;}
+.logocard.network.vinaphone{background-position:0 -70px;}
+.logocard.network.vietnamobile{background-position:0 -105px;}
+.logocard.network.gmobile{background-position:0 -142px;}
+
+.wrap{width:1140px; margin:0 auto;}
+.top{background:#fff; width:100%; height:90px;}
+.top h1 a{width:250px; height:90px; float:left;}
+.top ul{width:35%; margin-top:10px; float:right; text-align:right;}
+.top ul li{list-style:square; color:#0098db;}
+.top ul li p{color:#0098db; font-weight:bold; margin-bottom:2px; text-align:left;}
+.top ul li em{ font-style:normal; font-weight:normal;}
+.top ul li span{text-transform:uppercase;}
+.menu{background:#0098db; width:100%; height:90px; height:50px;}boxcard
+.menu ul{width:100%;}
+.menu ul li{display:block; float:left;}
+.menu ul li a{display:block; border-left:1px solid #0098db; color:#fff; height:50px; line-height:50px; padding:0 14px; font-size:16px;}
+.menu ul li b{color:#ffff00; font-size:24px; font-weight:bold;height:50px; line-height:46px; margin-left:18px;}
+.menu ul li em{font-style:normal; font-size:11px;color:#ffff00;}
+.menu ul li a:hover{color:#0098db; background:#d8f0fa;}
+.menu ul li a.current{background:#d8f0fa; color:#018ac7;}
+.hotnews{background:#fff; border-bottom:1px solid #e6e7e7; height:35px; line-height:35px;}
+.main{background:#f3f3f3; padding:20px 0 0;}
+.boxcard, .boxcontent{margin-bottom:25px;}
+.boxcard h2{font-size:20px; text-decoration:underline; margin-bottom:15px; color:#555;}
+.boxcard ul{margin-left:-2%;}
+.boxcard ul li{float:left;width:14.5%; height:100px; margin-left:2%; box-sizing:border-box;border:3px solid #ccc; background:#fff; position:relative;}
+.boxcard ul li a{display:block;width:100%;text-align:center;}
+.boxcard ul li:hover{border-color:#0098db;}
+.footer{background:#e9e9e9; border-top:1px solid #ddd; padding:10px 0;}
+.footer h4{text-transform:uppercase; font-size:12px; margin-bottom:5px; color:#555;}
+.boxbank, .boxend{margin-bottom:15px; color:#666;}
+.icoarrow{width:2%; float:left; margin-top:14px;}
+.icoarrow.rt{text-align:right;}
+.boxbank ul{width:96%; float:left; margin-left:1%;}
+.boxbank ul li{width:9%; height:50px; border:1px solid #ddd; margin-left:1%; display:block; float:left; box-sizing:border-box; background:#f3f3f3;}
+.boxbank ul li a{display:block;}
+.boxbank ul li:hover{border-color:#99ccff; cursor:pointer;}
+
+.boxpromotion{background:#ffffcc; padding:7px 10px 5px; border:1px dashed #ffcc33; margin-bottom:20px;}
+.localpath{margin-bottom:20px;}
+.localpath a{color:#404040;}
+.localpath a:hover{text-decoration:underline;}
+.localpath em{font-style:normal; font-weight:bold;}
+.colfrist, .colsecond, .boxpayment{border:2px solid #e5e5e5; background:#fff;}
+.colfrist{width:70%; min-height:573px;}
+.colsecond{width:27%;}
+.colsecond h3{text-transform:uppercase; font-size:14px; margin-bottom:5px; padding:10px;}
+table .titletbl{background:#d9d9d9; font-weight:bold;}
+table .titletbl td{padding:7px 50px;}
+table .txtprotbl{background:#e9e9e9; text-align:center;padding:5px 0; font-size:12px;}
+table .txtprotbl span{color:#ec2327; font-weight:bold; font-size:14px;}
+table .bgwhitetbl td, table .bggreytbl td{padding:5px 50px; border-bottom:1px solid #e5e5e5;}
+table .bggreytbl td{background:#f3f3f3;}
+table .bgwhitetbl.end td, table .bggreytbl.end td{border-bottom:none;}
+.colfrist .bxcontent{width:70%; margin:0 auto; padding:30px 0;}
+.colfrist .bxcontent.card{width:85%;}
+.bxcontent .row{margin-bottom:15px;}
+.bxcontent .row.ctnbtn{margin-top:30px;}
+.row .row_st, .row .row_nd, .row .row_rd{display:inline-block; vertical-align:middle;}
+.row .row_st{width:20%; font-size:14px;}
+.row .row_nd{width:58%;}
+.row .row_rd{width:20%;}
+.row .row_nd input{width:95%; background:#f3f3f3; height:24px; font-size:14px;}
+.row .row_nd span{color:#ec2327; font-size:20px; font-weight:bold;}
+.row .row_nd em{font-size:13px; font-style:normal; font-weight:normal;}
+
+.btnaction, .btncancel{border-radius:3px; display: inline-block; line-height:38px; height:38px; font-size:17px; padding:0 25px; font-weight:bold;}
+.btnaction{background:#0098db; color:#fff;}
+.btnaction:hover{background:#0188c3; color:#fff;}
+.btncancel{background:#ccc; color:#555;}
+.btncancel:hover{background:#bbb; color:#404040;}
+.report{color:#ec2327; margin:-10px 0 15px;}
+
+.bxcontent tr{margin-bottom:10px;}
+.bxcontent td.boxcard{width:22%; padding-right:2%; position:relative;}
+.bxcontent td.coldecrease, .bxcontent td.colincrease{width:8%; padding:6% 5%;}
+.bxcontent td.colinput{width:15%;padding:6% 0;}
+.bxcontent td.colmoney{width:30%; text-align:right; font-size:24px;padding:8% 0;}
+.bxcontent td.colmoney span{font-size:13px;}
+.bxcontent td.boxcard li{width:100%;}
+.bxcontent td.colinput input{width:100%; height:34px; background:#f3f3f3; font-size:24px; text-align:center;}
+.boxcard .imgcard{border:3px solid #ccc; display:block;}
+.boxcard .imgcard:hover, .boxcard .imgcard.sel{border-color:#0098db;}
+.coltotal{font-size:18px; padding-top:3%;}
+.coltotal span{color:#ec2327; font-weight:bold; font-size:24px;}
+.coltotal span em{font-style:normal; font-size:14px;}
+
+.row_nd select{width:99%; background:#f3f3f3; height:34px; font-size:14px; border-radius:3px;}
+.row_nd option{line-height:34px; height:34px; cursor:pointer;}
+.boxnote{background:#d8f0fa; border:1px dashed #037aa1; padding:10px; color:#037aa1; margin-top:50px;}
+
+.bxcontent table.result th{text-align:left; text-transform:uppercase;}
+.bxcontent table.result .colseri, .bxcontent table.result .colcode{width:25%; font-size:17px; padding-top:7%;}
+.bxcontent table.result .colcode{font-weight:bold;}
+.bxcontent table.result .colbtn{width:28%;padding-top:5.5%;}
+.bxcontent table.result .colbtn .btnaction{font-size:15px; padding:0 20px;}
+.bxcontent table.result .colbtn a{ margin-right:3%;}
+
+.boxpayment{ margin-bottom:25px; padding:3% 15%;}
+.boxpayment .row{ margin-bottom:10px;}
+.boxpayment .row_st, .boxpayment .row_nd{width:15%;}
+.boxpayment .row_rd{width:60%; color:#666;}
+.boxpayment p{font-size:14px; font-weight:bold; margin-bottom:10px;}
+.boxpayment ul{margin-left:-2%;width:100%; display:block;}
+.boxpayment li{width:14.5%; height:60px;margin:0 0 2% 2%; display:block; float:left;border:1px dashed #ccc; box-sizing:border-box;background:#f3f3f3;text-align:center; position:relative;}
+.boxpayment li a{display:block;}
+.boxpayment li:hover, .boxpayment li.sel{border-color:#0098db; cursor:pointer;}
+.boxpayment .ctnbtn{text-align:center; margin-top:2%;}
+.boxpayment .ctnbtn a:last-child{margin-left:2%;}
+.boxpayment .icoselcard{top:-10px; right:-10px;}
