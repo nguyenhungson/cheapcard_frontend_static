@@ -35,7 +35,8 @@ input[type=checkbox],input[type=radio]{border:0 none;vertical-align:middle;}
 .sprt.icohome{width:24px; height:24px; background-position:0 0; display:inline-block; margin-top:10px;}
 .sprt.icohome:hover, .menu ul li a.current .sprt.icohome{background-position:-32px 0; }
 .sprtcard{background-image:url(../images/sprt_card.png); background-repeat:no-repeat;}
-.logocard{width:150px; height:60px; display:block; margin-top:15px; margin-left:8px;}
+.logocard{width:150px; height:60px; display:block; margin-top:10%; margin-left:14%;}
+.card .logocard{margin-top:5px; margin-left:7%;}
 .logocard.viettel{background-position:23px 2px;}
 .logocard.mobifone{background-position:3px -62px;}
 .logocard.vinaphone{background-position:0 -118px;}
@@ -47,7 +48,8 @@ input[type=checkbox],input[type=radio]{border:0 none;vertical-align:middle;}
 .logocard.gate{background-position:18px -548px;}
 .logocard.ongame{background-position:0 -615px;}
 .logocard.mobay{background-position:0 -684px;}
-.logocard.zxu{background-position:45px -752px;}
+.logocard.bit{background-position:38px -831px; height:66px;}
+.logocard.zxu{background-position:38px -752px; height:66px;}
 .icoarrowpre, .icoarrownext{width:10px; height:18px; display:inline-block;}
 .icoarrowpre.dis{background-position:-64px 0;}
 .icoarrowpre{background-position:-80px 0;}
@@ -67,37 +69,42 @@ input[type=checkbox],input[type=radio]{border:0 none;vertical-align:middle;}
 .icodecrease.dis{background-position:-128px -112px; cursor:default;}
 .icoincrease{background-position:-64px -112px;}
 .icoincrease:hover{background-position:-64px -176px;}
-.icoselcard{width:32px;height:32px; background-position:-240px -128px; position:absolute; top:3px; right:3px;}
+.icoselcard{width:32px;height:32px; background-position:-240px -128px; position:absolute; top:-12px; right:-12px;}
 .logonetwork{width:140px; height:34px; display:block; background-position:-128px -176px;}
 .sprtbank{background-image:url(../images/sprt_bank.png); background-repeat:no-repeat;}
-.logobank{width:82px; height:30px; display:block; margin:10% 14%;}
-.logobank.vietcombank{background-position:0px 0px}
-.logobank.donga{background-image: url(../images/banks/donga.png);background-size: cover;}
-.logobank.agribank{background-image: url(../images/banks/agribank.png);background-size: cover;}
-.logobank.techcom{background-image: url(../images/banks/techcom.png);background-size: cover;}
-.logobank.eximbank{background-image: url(../images/banks/eximbank.png);background-size: cover;}
-.logobank.sacombank{background-image: url(../images/banks/sacombank.png);background-size: cover;}
-.logobank.vib{background-image: url(../images/banks/vib.png);background-size: cover;}
-.logobank.bidv{background-image: url(../images/banks/bidv.png);background-size: cover;}
-.logobank.mb{background-image: url(../images/banks/mb.png);background-size: cover;}
-.logobank.acb{background-image: url(../images/banks/acb.png);background-size: cover;}
-.logobank.maritime{background-image: url(../images/banks/maritime.png);background-size: cover;}
-.logobank.gpbank{background-image: url(../images/banks/gpbank.png);background-size: cover;}
-.logobank.hdbank{background-image: url(../images/banks/hdbank.png);background-size: cover;}
-.logobank.navibank{background-image: url(../images/banks/navibank.png);background-size: cover;}
-.logobank.vieta{background-image: url(../images/banks/vieta.png);background-size: cover;}
-.logobank.vpbank{background-image: url(../images/banks/vpbank.png);background-size: cover;}
-.logobank.baca{background-image: url(../images/banks/bacabank.png);background-size: cover;}
-.logobank.ocean{background-image: url(../images/banks/oceanbank.png);background-size: cover;}
-.logobank.anbinh{background-image: url(../images/banks/abbank.png);background-size: cover;}
-.logobank.nama{background-image: url(../images/banks/nama.png);background-size: cover;}
-.logobank.saigonbank{background-image: url(../images/banks/saigonbank.png);background-size: cover;}
-.logobank.pgbank{background-image: url(../images/banks/pgbank.png);background-size: cover;}
-.logobank.ocb{background-image: url(../images/banks/ocb.png);background-size: cover;}
-.logobank.daia{background-image: url(../images/banks/daia.png);background-size: cover;}
-.logobank.tienphong{background-image: url(../images/banks/tpbank.png);background-size: cover;}
-.logobank.visa{background-image: url(../images/banks/visa.png);background-size: cover;}
-.logobank.vtb{background-image: url(../images/banks/vietin.png);background-size: cover;}
+.logobank{width:98px; height:40px; display:block; margin:6%;}
+.logobank.vietcombank{background-position:0 4px;}
+.logobank.viettinbank{background-position:0 -40px;}
+.logobank.vietabank{background-position:0 -96px;}
+.logobank.namabank{background-position:0 -142px;}
+.logobank.quocdanbank{background-position:0 -182px;}
+.logobank.phuongdongbank{background-position:0 -235px;}
+.logobank.oceanbank{background-position:0 -276px;}
+.logobank.pgbank{background-position:0 -314px;}
+.logobank.sacombank{background-position:0 -352px;}
+.logobank.saigonbank{background-position:0 -399px; height:45px;}
+.logobank.seabank{background-position:0 -445px; margin-top:12%;}
+.logobank.shbbank{background-position:0 -484px;}
+.logobank.techcombank{background-position:0 -544px;}
+.logobank.tpbank{background-position:0 -598px;}
+.logobank.vpbank{background-position:0 -645px;}
+.logobank.vibbank{background-position:0 -702px;}
+.logobank.anbinhbank{background-position:-112px 10px;}
+.logobank.achaubank{background-position:-112px -40px;}
+.logobank.agribank{background-position:-112px -84px;}
+.logobank.bacabank{background-position:-112px -138px;}
+.logobank.baovietbank{background-position:-112px -180px;}
+.logobank.bidvbank{background-position:-112px -232px;}
+.logobank.dongabank{background-position:-112px -288px;}
+.logobank.eximbank{background-position:-112px -357px;}
+.logobank.gpbank{background-position:-112px -388px;}
+.logobank.hdbank{background-position:-112px -442px;}
+.logobank.lienvietbank{background-position:-112px -496px;}
+.logobank.quandoibank{background-position:-112px -541px;}
+.logobank.maritimebank{background-position:-112px -600px;}
+.logobank.visa{background-position:-224px 10px;}
+.logobank.mastercard{background-position:-224px -48px; margin-top:9%;}
+.logobank.jcb{background-position:-224px -96px;}
 
 .row .logocard{margin:0;}
 .logocard.network{width:90px; height:34px; background-size:108px}
@@ -118,17 +125,20 @@ input[type=checkbox],input[type=radio]{border:0 none;vertical-align:middle;}
 .menu{background:#0098db; width:100%; height:90px; height:50px;}boxcard
 .menu ul{width:100%;}
 .menu ul li{display:block; float:left;}
-.menu ul li a{display:block; border-left:1px solid #0098db; color:#fff; height:50px; line-height:50px; padding:0 14px; font-size:16px;}
-.menu ul li b{color:#ffff00; font-size:24px; font-weight:bold;height:50px; line-height:46px; margin-left:18px;}
+.menu ul li.end{float:right;}
+.menu ul li a{display:block; border-left:1px solid #0098db; color:#fff; height:50px; line-height:50px; padding:0 20px; font-size:16px;}
+.menu ul li b{color:#ffff00; font-size:24px; font-weight:bold;height:50px; line-height:50px; margin-left:18px;}
 .menu ul li em{font-style:normal; font-size:11px;color:#ffff00;}
 .menu ul li a:hover{color:#0098db; background:#d8f0fa;}
 .menu ul li a.current{background:#d8f0fa; color:#018ac7;}
 .hotnews{background:#fff; border-bottom:1px solid #e6e7e7; height:35px; line-height:35px;}
+.hotnews p{float:right; color:#F00;}
 .main{background:#f3f3f3; padding:20px 0 0;}
-.boxcard, .boxcontent{margin-bottom:25px;}
+.boxcontent{margin-bottom:25px;}
+.boxcard{margin-bottom:5px;}
 .boxcard h2{font-size:20px; text-decoration:underline; margin-bottom:15px; color:#555;}
-.boxcard ul{margin-left:-2%;}
-.boxcard ul li{float:left;width:14.5%; height:100px; margin-left:2%; box-sizing:border-box;border:3px solid #ccc; background:#fff; position:relative;}
+.boxcard ul{margin-left:-3%;}
+.boxcard ul li{float:left;width:17%; height:110px; margin-left:3%; margin-bottom:3%; box-sizing:border-box;border:3px solid #ccc; background:#fff; position:relative;}
 .boxcard ul li a{display:block;width:100%;text-align:center;}
 .boxcard ul li:hover{border-color:#0098db;}
 .footer{background:#e9e9e9; border-top:1px solid #ddd; padding:10px 0;}
@@ -136,7 +146,7 @@ input[type=checkbox],input[type=radio]{border:0 none;vertical-align:middle;}
 .boxbank, .boxend{margin-bottom:15px; color:#666;}
 .icoarrow{width:2%; float:left; margin-top:14px;}
 .icoarrow.rt{text-align:right;}
-.boxbank ul{width:96%; float:left; margin-left:1%;}
+.boxbank ul{width:96%; float:left; }
 .boxbank ul li{width:9%; height:50px; border:1px solid #ddd; margin-left:1%; display:block; float:left; box-sizing:border-box; background:#f3f3f3;}
 .boxbank ul li a{display:block;}
 .boxbank ul li:hover{border-color:#99ccff; cursor:pointer;}
@@ -149,12 +159,13 @@ input[type=checkbox],input[type=radio]{border:0 none;vertical-align:middle;}
 .colfrist, .colsecond, .boxpayment{border:2px solid #e5e5e5; background:#fff;}
 .colfrist{width:70%; min-height:573px;}
 .colsecond{width:27%;}
-.colsecond h3{text-transform:uppercase; font-size:14px; margin-bottom:5px; padding:10px;}
+.colsecond h3{text-transform:uppercase; font-size:14px; padding:10px;}
 table .titletbl{background:#d9d9d9; font-weight:bold;}
-table .titletbl td{padding:7px 50px;}
-table .txtprotbl{background:#e9e9e9; text-align:center;padding:5px 0; font-size:12px;}
+table .titletbl td{padding:7px 48px;}
+table .txtprotbl, table .bgselcard{background:#d8f0fa; text-align:center;padding:5px 0; font-size:12px;}
+table .bgselcard{background:#eee;border-bottom:1px solid #f5f5f5;}
 table .txtprotbl span{color:#ec2327; font-weight:bold; font-size:14px;}
-table .bgwhitetbl td, table .bggreytbl td{padding:5px 50px; border-bottom:1px solid #e5e5e5;}
+table .bgwhitetbl td, table .bggreytbl td{padding:5px 46px; border-bottom:1px solid #e5e5e5;}
 table .bggreytbl td{background:#f3f3f3;}
 table .bgwhitetbl.end td, table .bggreytbl.end td{border-bottom:none;}
 .colfrist .bxcontent{width:70%; margin:0 auto; padding:30px 0;}
@@ -168,6 +179,26 @@ table .bgwhitetbl.end td, table .bggreytbl.end td{border-bottom:none;}
 .row .row_nd input{width:95%; background:#f3f3f3; height:24px; font-size:14px;}
 .row .row_nd span{color:#ec2327; font-size:20px; font-weight:bold;}
 .row .row_nd em{font-size:13px; font-style:normal; font-weight:normal;}
+.bgselcard ul{margin-bottom:2.5%; display:block; overflow:hidden;}
+.bgselcard li{display:block; float:left;width:30%; margin:2.5% 0 0 2.5%;}
+.bgselcard li a{display:block;height:45px; border:1px solid #ccc; background:#fff; border-radius:3px; box-sizing:border-box;}
+.bgselcard li a.current{border-color:#0098db;}
+.bgselcard .sprtcard{ background-image:url(../images/sprt_cardsml.png); background-repeat:no-repeat;}
+.bgselcard .logocard{ width:80px; height:32px; margin-top:5%; opacity:0.4;}
+.bgselcard .sprtcard.viettel{background-position:0 0; margin-left:19%;}
+.bgselcard .sprtcard.mobifone{background-position:0 -34px; margin-left:8%;}
+.bgselcard .sprtcard.vinaphone{background-position:0 -62px; margin-left:5%;}
+.bgselcard .sprtcard.vietnamobile{background-position:0 -97px; margin-left:21%;}
+.bgselcard .sprtcard.gmobile{background-position:0 -133px;margin-left:4%;}
+.bgselcard .sprtcard.zing{background-position:0 -169px;margin-left:19%;}
+.bgselcard .sprtcard.garena{background-position:0 -205px;margin-left:32%;}
+.bgselcard .sprtcard.vtc{background-position:0 -255px;margin-left:14%;}
+.bgselcard .sprtcard.gate{background-position:0 -291px;margin-left:17%;}
+.bgselcard .sprtcard.ongame{background-position:0 -328px;margin-left:4%;}
+.bgselcard .sprtcard.mobay{background-position:0 -362px;margin-left:8%;}
+.bgselcard .sprtcard.bit, .bgselcard .sprtcard.zingxu{background-position:0 -442px;margin-left:30%; height:40px; margin-top:3%;}
+.bgselcard .sprtcard.zingxu{background-position:0 -400px;}
+.bgselcard li a.current .logocard, .bgselcard li:hover .logocard{opacity:1;}
 
 .btnaction, .btncancel{border-radius:3px; display: inline-block; line-height:38px; height:38px; font-size:17px; padding:0 25px; font-weight:bold;}
 .btnaction{background:#0098db; color:#fff;}
@@ -184,8 +215,29 @@ table .bgwhitetbl.end td, table .bggreytbl.end td{border-bottom:none;}
 .bxcontent td.colmoney span{font-size:13px;}
 .bxcontent td.boxcard li{width:100%;}
 .bxcontent td.colinput input{width:100%; height:34px; background:#f3f3f3; font-size:24px; text-align:center;}
-.boxcard .imgcard{border:3px solid #ccc; display:block;}
+.boxcard .imgcard{border:3px solid #ccc; display:block;width:165px; height:100px; position:relative;}
 .boxcard .imgcard:hover, .boxcard .imgcard.sel{border-color:#0098db;}
+.imgscard .logocard{margin-top:5px;}
+.boxcard .imgcard.card10k{background:#e4fae5;}
+.boxcard .imgcard.card20k{background:#f8f2b6;}
+.boxcard .imgcard.card50k{background:#d6ecf9;}
+.boxcard .imgcard.card100k{background:#edddfa;}
+.boxcard .imgcard.card200k{background:#d6fefd;}
+.boxcard .imgcard.card300k{background:#d9e0fa;}
+.boxcard .imgcard.card500k{background:#fce1e8;}
+.boxcard .imgcard.card1000k{background:#ffe4ca}
+
+.boxcard .imgcard em{height:30px; position:absolute; left:0; bottom:0; line-height:33px;width:100%; box-sizing:border-box;color:#fff; font-size:27px; font-weight:bold; font-style:normal; text-align:center;}
+.boxcard .imgcard i{font-size:14px; font-style:normal;}
+.boxcard .imgcard.card10k em{background:#269b28;}
+.boxcard .imgcard.card20k em{background:#acac01;}
+.boxcard .imgcard.card50k em{background:#0389ec;}
+.boxcard .imgcard.card100k em{background:#471fa6;}
+.boxcard .imgcard.card200k em{background:#007674;}
+.boxcard .imgcard.card300k em{background:#0000fb;}
+.boxcard .imgcard.card500k em{background:#a51644;}
+.boxcard .imgcard.card1000k em{background:#ff6600;}
+
 .coltotal{font-size:18px; padding-top:3%;}
 .coltotal span{color:#ec2327; font-weight:bold; font-size:24px;}
 .coltotal span em{font-style:normal; font-size:14px;}
@@ -205,7 +257,7 @@ table .bgwhitetbl.end td, table .bggreytbl.end td{border-bottom:none;}
 .boxpayment .row{ margin-bottom:10px;}
 .boxpayment .row_st, .boxpayment .row_nd{width:15%;}
 .boxpayment .row_rd{width:60%; color:#666;}
-.boxpayment p{font-size:14px; font-weight:bold; margin-bottom:10px;}
+.boxpayment p, .boxinfo p{font-size:14px; font-weight:bold; margin-bottom:10px;}
 .boxpayment ul{margin-left:-2%;width:100%; display:block;}
 .boxpayment li{width:14.5%; height:60px;margin:0 0 2% 2%; display:block; float:left;border:1px dashed #ccc; box-sizing:border-box;background:#f3f3f3;text-align:center; position:relative;}
 .boxpayment li a{display:block;}
@@ -213,3 +265,59 @@ table .bgwhitetbl.end td, table .bggreytbl.end td{border-bottom:none;}
 .boxpayment .ctnbtn{text-align:center; margin-top:2%;}
 .boxpayment .ctnbtn a:last-child{margin-left:2%;}
 .boxpayment .icoselcard{top:-10px; right:-10px;}
+
+/*Page not found*/
+.bxnotfound{text-align:center; display:block; margin:30px 0;}
+.bxnotfound img{margin-bottom:30px;}
+.bxnotfound p{color:#6d7a8d; font-size:20px; margin-bottom:20px;}
+
+/*Box notify*/
+.bxnotify{padding:8px 15px; border-radius:3px; border-style:solid; border-width:1px; margin-bottom:20px;}
+.bxnotify span{font-weight:bold;}
+.bxnotify.success{color:#2a783c; background:#e0efd8; border-color:#d8e7d2;}
+.bxnotify.fail{color:#c14539; background:#f3dddf; border-color:#ebd8da;}
+.bxnotify.warning{color:#bc8e50; background:#fdf8e4; border-color:#f4f1e2;}
+
+.loading{width:38px; height:38px; background:url(../images/loading.gif) no-repeat; display:inline-block; vertical-align:bottom;}
+             
+.boxinfo{padding:3% 15%;}
+.boxinfo .row_st{width:15%;}
+.boxinfo{border:2px solid #e5e5e5; border-bottom: none; background:#fff;}
+.txtred{color: #f00;}
+.boxinfo .title{margin-bottom: 20px}
+.boxinfo .title em{font-weight: normal}
+
+/* ----------------------------------------------
+[ popup ]
+------------------------------------------------- */
+.esalepuclose span,.fixedbox_close a{background-image:url(../images/esalepu_sprt.png);}
+
+/*Close icon */
+.esalepuclose{float:right;margin:9px 6px 0 0;padding:4px;}
+.fixedbox_close a{margin-top:2px;}
+.esalepuclose span,.fixedbox_close a{display:block;background-position:0 0;width:16px;height:16px;}
+.esalepuclose:hover span,.fixedbox_close a:hover{background-position:0 -16px;}
+.esalepopup_overlay,.esalepopup{z-index:50;}
+.esalepopup_overlay{position:fixed;width:100%;height:100%;background:url(../images/opacity_overlay.png);top:0;left:0;overflow:auto;}
+.esalepopup{position:absolute;border-radius:2px;box-shadow:0 0 5px #111;}
+.esalepopup.pu_small{width:300px;}
+.esalepopup.pu_med{width:400px;}
+.esalepopup.pu_large{width:500px;}
+.esalepopup.pu_larger{width:650px;}
+.esalepopup.pu_big{width:750px}
+.esaleputitle{background-color:#0092df;line-height:41px;border-bottom:2px solid #1e7bcf;border-radius:3px 3px 0 0;}
+.esaleputitle strong{display:block;padding:0 10px;color:#fff;font-size:14px;}
+.esalepucont{border:1px solid #e1e1e1;border-width:0 1px 0;background-color:#fff;padding:10px; font-size:14px;}
+.esalepucont.login{padding:20px;}
+.esalepucont.login.acc{height:372px;}
+.esalepubot{border-top:1px solid #e1e1e1;background-color:#f9f9f9;border-radius:0 0 2px 2px;}
+
+.esalepubtn{text-align:center;padding:10px;}
+.esalepubtn .submitbtn,.esalepubtn .cancelbtn{display:inline-block;margin-left:5px;border-radius:2px;color:#fff;font-weight:bold;font-size:12px;line-height:26px;padding:0 10px;}
+.esalepubtn .submitbtn{background:#0092df;}
+.esalepubtn .submitbtn:hover{background:#1e7bcf; text-decoration:none;}
+.esalepubtn .cancelbtn{background-color:#a0a0a0;}
+.esalepubtn .cancelbtn:hover{background-color:#888;text-decoration:none;}
+.popup_center{position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%); -webkit-transform:translate(-50%, -50%);}
+
+.boxpcc{margin-top: 20px}

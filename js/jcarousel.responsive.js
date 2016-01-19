@@ -6,9 +6,11 @@
             .on('jcarousel:reload jcarousel:create', function () {
                 var carousel = $(this);
                 var orgWidth = carousel.find("ul").innerWidth();
-                var width = 0.09 * orgWidth - 1;
+                var width = 0.1 * orgWidth + 1;
                 var marginLeft = 0.01 * orgWidth;
 
+                $('.jcarousel').css("width", '96%');
+                $('.jcarousel').css("margin-left", '1%');
                 carousel.jcarousel('items').css('width', width);
                 carousel.jcarousel('items').css('margin-left', marginLeft);
                 
