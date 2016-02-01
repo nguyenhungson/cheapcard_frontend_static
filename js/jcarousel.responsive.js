@@ -1,11 +1,11 @@
 (function($){
     $(function() {
         var jcarousel = $('.jcarousel');
+        var orgWidth = jcarousel.find("ul").innerWidth();
 
         jcarousel
             .on('jcarousel:reload jcarousel:create', function () {
                 var carousel = $(this);
-                var orgWidth = carousel.find("ul").innerWidth();
                 var width = 0.1 * orgWidth + 1;
                 var marginLeft = 0.01 * orgWidth;
 

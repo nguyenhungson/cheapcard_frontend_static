@@ -1,6 +1,48 @@
 $(document).ready(function () {
+    var pathName = window.location.pathname;
+    if (pathName == "/thanhtoan/hoanthanh") {
+        var textCopyAll = "";
+        $("#tableCards tbody tr").each(function () {
+            if (typeof $(this).find("td:eq(0)").find("input[type=hidden]:eq(0)").val() != "undefined") {
+                var data = $(this).find("td:eq(0)").find("input[type=hidden]:eq(0)").val();
+                textCopyAll += data + "\r\n";
+                $(this).find("td:eq(3) a").attr("data-clipboard-text", data);
+                var client = new ZeroClipboard($(this).find("td:eq(3) a"));
 
+                client.on("ready", function (readyEvent) {
+                    client.on("aftercopy", function (event) {
+                        Common.openPopup("Đã copy thành công", "", "2000", "");
+                    });
+                });
+            }
+        });
+
+        //copyAll
+        $("#copyAll").attr("data-clipboard-text", textCopyAll);
+        var client = new ZeroClipboard($("#copyAll"));
+
+        client.on("ready", function (readyEvent) {
+            client.on("aftercopy", function (event) {
+                Common.openPopup("Đã copy thành công", "", "2000", "");
+            });
+        });
+    }
+    else if(pathName == "/thongtin/banggia.html"){
+        $("#menuPrice").find("li:eq(0)").click();
+    }
 });
+
+function clickPrice(table, element){
+    $("#menuPrice li").each(function(){
+        $(this).find("a").removeClass("current");
+    });
+    $("#mobile").css("display", "none");
+    $("#game").css("display", "none");
+    $("#zingxu").css("display", "none");
+    
+    $(element).find("a").addClass("current");
+    $(table).css("display", "table");
+}
 
 function chooseCard(element, isChooseCard, isDescrese) {
     var quantity = $(element).closest("tr").find("td:eq(2)").find("input[type=text]").val();
@@ -8,6 +50,12 @@ function chooseCard(element, isChooseCard, isDescrese) {
 
     if (isNaN(quantity)) {
         quantity = 0;
+    }
+    else{
+        quantity = Number(quantity);
+        if(quantity !== parseInt(quantity, 10)){
+            quantity = 0;
+        }
     }
 
     if (isChooseCard == 1) {
@@ -80,9 +128,8 @@ function calTotalAmount() {
 }
 
 function calTotalAmountZX() {
-    var priceDiscount = $("#zxPrice").val();
-    var quantity = $("#quantity").val();
-    $("#totalAmount").text(Common.formatNumber((100 - priceDiscount) * quantity, 0, ",", "."));
+    var infoZx = $("#pricezx").val().split("|");
+    $("#totalAmount").text(Common.formatNumber(infoZx[0], 0, ",", "."));
 }
 
 function chooseBank(element) {
@@ -93,6 +140,15 @@ function chooseBank(element) {
 
     $(element).addClass("sel");
     $(element).find("a").append("<span class=\"sprt icoselcard\"></span>");
+    var bankCode = $(element).attr("data-bank");
+
+    var totalAmount = Number($("#totalAmount").text().replace(/\./g, ""));
+    var fee = totalAmount * 0.01 + 1500;
+    if (bankCode == "123PCC") {
+        fee = totalAmount * 0.03 + 3000;
+    }
+
+    $("#fee").html(Common.formatNumber(fee, 0, ",", ".") + "<em> VNĐ</em>");
 }
 
 function acceptChooseCard() {
@@ -106,8 +162,8 @@ function acceptChooseCard() {
             totalQuantity += Number(quantity);
         }
     });
-    
-    if(totalQuantity > 0){
+
+    if (totalQuantity > 0) {
         $.ajax({
             url: "/banthe/choose_card",
             type: "post",
@@ -116,8 +172,7 @@ function acceptChooseCard() {
             },
             success: function (result) {
                 if (result == "") {
-                    alert("Dữ liệu không hợp lệ. Vui lòng thử lại");
-                    window.location.href = window.location.pathname;
+                    Common.openPopup("Dữ liệu không hợp lệ. Vui lòng thử lại", "", "5000", "/");
                 }
                 else {
                     window.location.href = result;
@@ -125,23 +180,25 @@ function acceptChooseCard() {
             }
         });
     }
-    else{
+    else {
         openPopup("Vui lòng chọn loại thẻ cần mua", "");
     }
 }
 
 function acceptTopupGame() {
     var accountName = $("#accountName").val();
-    if(accountName.trim() == ""){
+    var infoZx = $("#pricezx").val().split("|");
+    if (accountName.trim() == "") {
         openPopup("Vui lòng nhập tên tài khoản");
     }
-    else{
+    else {
         $.ajax({
             url: "/naptiengame/accept_topup",
             type: "post",
             data: {
                 accountName: $("#accountName").val(),
-                quantity: $("#quantity").val()
+                id: infoZx[1],
+                amount: infoZx[0]
             },
             success: function (result) {
                 if (result == "") {
@@ -159,11 +216,11 @@ function acceptTopupGame() {
 function acceptPayment() {
     var selBank = $("#listBank li[class=sel]").attr("data-bank");
     var strError = "";
-    if(typeof selBank == "undefined"){
+    if (typeof selBank == "undefined") {
         strError = "Vui lòng chọn ngân hàng cần thanh toán";
     }
 
-    if(strError == ""){
+    if (strError == "") {
         $.ajax({
             url: "/thanhtoan/accept_payment",
             type: "post",
@@ -172,18 +229,57 @@ function acceptPayment() {
                 bank: $("#listBank li[class=sel]").attr("data-bank")
             },
             success: function (result) {
-                if (result == "") {
-                    alert("Dữ liệu không hợp lệ. Vui lòng thử lại");
-                    window.location.href = "/";
+                var jsonResult;
+                try
+                {
+                    jsonResult = $.parseJSON(result);
                 }
-                else {
-                    window.location.href = result;
+                catch (err)
+                {
+                    Common.openPopup("Dữ liệu không hợp lệ.<br>Quý khách vui lòng thử lại sau", "", "10000", "/");
+                    return false;
                 }
-                console.log(result);
+                
+                var strInfo = "";
+                var data = jsonResult.data;
+                if(jsonResult.code == 1){
+                    if(data.url != ""){
+                        window.location.href = data.url;
+                    }
+                    else{
+                        strInfo = "Dữ liệu không hợp lệ.<br>Quý khách vui lòng thử lại sau";
+                    }
+                }
+                else if(jsonResult.code == -3004){
+                    var lstOFS = data.lstOFS;
+                    if(lstOFS.length > 0){
+                        strInfo = "Loại thẻ này đã hết hoặc không đủ để bán:";
+                        $(lstOFS).each(function(index, item){
+                                strInfo += "<br>- Thẻ " + item.esaleSupplierCode + " " + Common.formatNumber(item.unitPrice, 0, ",", ".") + " VNĐ";
+                        });
+                    }
+                    else{
+                        strInfo = "Dữ liệu không hợp lệ.<br>Quý khách vui lòng thử lại sau";
+                    }
+                }
+                else if(jsonResult.code == -4000){
+                    strInfo = "Ngân hàng này hiện đang bảo trì<br>Quý khách vui lòng thử lại sau hoặc chọn ngân hàng khác";
+                }
+                else{
+                    strInfo = "Dữ liệu không hợp lệ.<br>Quý khách vui lòng thử lại sau";
+                }
+                
+                if(strInfo != ""){
+                    var redirect = "/";
+                    if(jsonResult.code == -4000){
+                        redirect = "";
+                    }
+                    Common.openPopup(strInfo, "400px", "10000", redirect);
+                }
             }
         });
     }
-    else{
+    else {
         openPopup(strError, "");
     }
 }
@@ -205,30 +301,43 @@ function closePopup() {
     $("#formPopup").css("display", "none");
 }
 
-function backChoose(){
+function backChoose() {
     window.history.go(-1);
 }
 
-function getListPrice(supplier){
-    $("#tablePriceList tr").each(function(index, item){
-        if(index == 0){
+function getListPrice(supplier) {
+    $("#tablePriceList tr").each(function (index, item) {
+        if (index == 0) {
             return true;
         }
-        
-        if($(this).attr("data-type") == supplier){
+
+        if ($(this).attr("data-type") == supplier) {
             $(this).css("display", "table-row");
         }
-        else{
+        else {
             $(this).css("display", "none");
         }
     });
-    
-    $("#tablePriceList tr:eq(0) ul li").each(function(){
-        if($(this).attr("data-type") == supplier){
+
+    $("#tablePriceList tr:eq(0) ul li").each(function () {
+        if ($(this).attr("data-type") == supplier) {
             $(this).find("a").addClass("current");
         }
-        else{
+        else {
             $(this).find("a").removeClass("current");
         }
     });
+}
+
+function exportExcelCard() {
+    var textCopyAll = "";
+    $("#tableCards tbody tr").each(function () {
+        if (typeof $(this).find("td:eq(0)").find("input[type=hidden]:eq(1)").val() != "undefined") {
+            var data = $(this).find("td:eq(0)").find("input[type=hidden]:eq(1)").val();
+            textCopyAll += data + "-";
+        }
+    });
+    
+    $("#formExportExcel input[type=hidden]").val(textCopyAll);
+    $("#formExportExcel").submit();
 }

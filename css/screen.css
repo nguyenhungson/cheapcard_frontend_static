@@ -43,7 +43,7 @@ input[type=checkbox],input[type=radio]{border:0 none;vertical-align:middle;}
 .logocard.vietnamobile{background-position:25px -182px;}
 .logocard.gmobile{background-position:0 -250px;}
 .logocard.zing{background-position:20px -315px;}
-.logocard.garena{background-position:45px -384px;}
+.logocard.garena{background-position:45px -382px;}
 .logocard.vtc{background-position:10px -476px;}
 .logocard.gate{background-position:18px -548px;}
 .logocard.ongame{background-position:0 -615px;}
@@ -114,31 +114,34 @@ input[type=checkbox],input[type=radio]{border:0 none;vertical-align:middle;}
 .logocard.network.vietnamobile{background-position:0 -105px;}
 .logocard.network.gmobile{background-position:0 -142px;}
 
-.wrap{width:1140px; margin:0 auto;}
+.wrap{max-width:1140px; margin:0 auto;}
 .top{background:#fff; width:100%; height:90px;}
 .top h1 a{width:250px; height:90px; float:left;}
 .top ul{width:35%; margin-top:10px; float:right; text-align:right;}
 .top ul li{list-style:square; color:#0098db;}
-.top ul li p{color:#0098db; font-weight:bold; margin-bottom:2px; text-align:left;}
+.top ul li p{color:#0098db; font-weight:bold; margin-bottom:2px; text-align:left;}table .titletbl td
 .top ul li em{ font-style:normal; font-weight:normal;}
 .top ul li span{text-transform:uppercase;}
-.menu{background:#0098db; width:100%; height:90px; height:50px;}boxcard
+.menu{background:#0098db; width:100%;height:50px;}
 .menu ul{width:100%;}
 .menu ul li{display:block; float:left;}
-.menu ul li.end{float:right;}
+.menu ul li.end{float:right; color:#fff; font-size:13px; margin-right:110px;}
 .menu ul li a{display:block; border-left:1px solid #0098db; color:#fff; height:50px; line-height:50px; padding:0 20px; font-size:16px;}
-.menu ul li b{color:#ffff00; font-size:24px; font-weight:bold;height:50px; line-height:50px; margin-left:18px;}
-.menu ul li em{font-style:normal; font-size:11px;color:#ffff00;}
+.menu ul li b{color:#ffff00; font-size:24px; font-weight:bold;height:50px; line-height:50px; margin-left:5px;}
+.menu ul li em{font-style:normal;}
 .menu ul li a:hover{color:#0098db; background:#d8f0fa;}
 .menu ul li a.current{background:#d8f0fa; color:#018ac7;}
+.menu .wrap{position:relative;}
+.btn_fp{width:90px; height:100px; background:url(../images/btn_fanpage.png) no-repeat; position:absolute; top:-13px; right:0;}
+.btn_fp:hover{ background-position:0 -100px;}
 .hotnews{background:#fff; border-bottom:1px solid #e6e7e7; height:35px; line-height:35px;}
 .hotnews p{float:right; color:#F00;}
-.main{background:#f3f3f3; padding:20px 0 0;}
+.main{background:#f3f3f3; padding:15px 0 0;}
 .boxcontent{margin-bottom:25px;}
 .boxcard{margin-bottom:5px;}
 .boxcard h2{font-size:20px; text-decoration:underline; margin-bottom:15px; color:#555;}
 .boxcard ul{margin-left:-3%;}
-.boxcard ul li{float:left;width:17%; height:110px; margin-left:3%; margin-bottom:3%; box-sizing:border-box;border:3px solid #ccc; background:#fff; position:relative;}
+.boxcard ul li{float:left;width:17%; height:110px; margin-left:3%; margin-bottom:3%; box-sizing:border-box;border:3px solid #e1e1e1; background:#fff; position:relative;}
 .boxcard ul li a{display:block;width:100%;text-align:center;}
 .boxcard ul li:hover{border-color:#0098db;}
 .footer{background:#e9e9e9; border-top:1px solid #ddd; padding:10px 0;}
@@ -146,22 +149,23 @@ input[type=checkbox],input[type=radio]{border:0 none;vertical-align:middle;}
 .boxbank, .boxend{margin-bottom:15px; color:#666;}
 .icoarrow{width:2%; float:left; margin-top:14px;}
 .icoarrow.rt{text-align:right;}
-.boxbank ul{width:96%; float:left; }
-.boxbank ul li{width:9%; height:50px; border:1px solid #ddd; margin-left:1%; display:block; float:left; box-sizing:border-box; background:#f3f3f3;}
+.boxbank ul{width:96%; float:left;}
+.boxbank ul li{width:10%; height:54px; border:1px solid #ddd; margin-left:1.1%; display:block; float:left; box-sizing:border-box; background:#f3f3f3;}
 .boxbank ul li a{display:block;}
 .boxbank ul li:hover{border-color:#99ccff; cursor:pointer;}
+.boxbank .logobank{ margin-top:4px;}
 
-.boxpromotion{background:#ffffcc; padding:7px 10px 5px; border:1px dashed #ffcc33; margin-bottom:20px;}
-.localpath{margin-bottom:20px;}
+.boxpromotion{background:#ffffcc; padding:7px 10px 5px; border:1px dashed #ffcc33; margin-bottom:15px;}
+.localpath{margin-bottom:15px;}
 .localpath a{color:#404040;}
 .localpath a:hover{text-decoration:underline;}
 .localpath em{font-style:normal; font-weight:bold;}
 .colfrist, .colsecond, .boxpayment{border:2px solid #e5e5e5; background:#fff;}
 .colfrist{width:70%; min-height:573px;}
-.colsecond{width:27%;}
+.colsecond{width:27%; overflow:hidden;}
 .colsecond h3{text-transform:uppercase; font-size:14px; padding:10px;}
 table .titletbl{background:#d9d9d9; font-weight:bold;}
-table .titletbl td{padding:7px 48px;}
+table .titletbl td{padding:7px 36px;}
 table .txtprotbl, table .bgselcard{background:#d8f0fa; text-align:center;padding:5px 0; font-size:12px;}
 table .bgselcard{background:#eee;border-bottom:1px solid #f5f5f5;}
 table .txtprotbl span{color:#ec2327; font-weight:bold; font-size:14px;}
@@ -215,28 +219,36 @@ table .bgwhitetbl.end td, table .bggreytbl.end td{border-bottom:none;}
 .bxcontent td.colmoney span{font-size:13px;}
 .bxcontent td.boxcard li{width:100%;}
 .bxcontent td.colinput input{width:100%; height:34px; background:#f3f3f3; font-size:24px; text-align:center;}
-.boxcard .imgcard{border:3px solid #ccc; display:block;width:165px; height:100px; position:relative;}
+.boxcard .imgcard{border:3px solid #e1e1e1; display:block;width:165px; height:100px; position:relative;}
 .boxcard .imgcard:hover, .boxcard .imgcard.sel{border-color:#0098db;}
 .imgscard .logocard{margin-top:5px;}
-.boxcard .imgcard.card10k{background:#e4fae5;}
-.boxcard .imgcard.card20k{background:#f8f2b6;}
-.boxcard .imgcard.card50k{background:#d6ecf9;}
-.boxcard .imgcard.card100k{background:#edddfa;}
-.boxcard .imgcard.card200k{background:#d6fefd;}
-.boxcard .imgcard.card300k{background:#d9e0fa;}
-.boxcard .imgcard.card500k{background:#fce1e8;}
-.boxcard .imgcard.card1000k{background:#ffe4ca}
+.boxcard .imgcard.card10k, .boxcard .imgcard.card20k, .boxcard .imgcard.card50k, .boxcard .imgcard.card60k, .boxcard .imgcard.card100k, .boxcard .imgcard.card200k, .boxcard .imgcard.card300k, .boxcard .imgcard.card500k, .boxcard .imgcard.card1000k, .boxcard .imgcard.card2000k, .boxcard .imgcard.card5000k{background:#f5f5f5;}
+
+/*.boxcard .imgcard.card10k{background:#fff9af;}
+.boxcard .imgcard.card20k{background:#e7eda5;}
+.boxcard .imgcard.card50k{background:#a3d59a;}
+.boxcard .imgcard.card60k{background:#9edceb;}
+.boxcard .imgcard.card100k{background:#aa9ff2;}
+.boxcard .imgcard.card200k{background:#e7add6;}
+.boxcard .imgcard.card300k{background:#f8a4be;}
+.boxcard .imgcard.card500k{background:#9bcfe7;}
+.boxcard .imgcard.card1000k{background:#fddca9;}
+.boxcard .imgcard.card2000k{background:#dcecc7;}
+.boxcard .imgcard.card5000k{background:#fbbbbe;}*/
 
 .boxcard .imgcard em{height:30px; position:absolute; left:0; bottom:0; line-height:33px;width:100%; box-sizing:border-box;color:#fff; font-size:27px; font-weight:bold; font-style:normal; text-align:center;}
 .boxcard .imgcard i{font-size:14px; font-style:normal;}
-.boxcard .imgcard.card10k em{background:#269b28;}
-.boxcard .imgcard.card20k em{background:#acac01;}
-.boxcard .imgcard.card50k em{background:#0389ec;}
-.boxcard .imgcard.card100k em{background:#471fa6;}
-.boxcard .imgcard.card200k em{background:#007674;}
-.boxcard .imgcard.card300k em{background:#0000fb;}
-.boxcard .imgcard.card500k em{background:#a51644;}
-.boxcard .imgcard.card1000k em{background:#ff6600;}
+.boxcard .imgcard.card10k em{background:#ffcc00;}
+.boxcard .imgcard.card20k em{background:#99b53c;}
+.boxcard .imgcard.card50k em{background:#138b43;}
+.boxcard .imgcard.card60k em{background:#1691b2;}
+.boxcard .imgcard.card100k em{background:#3b2f91;}
+.boxcard .imgcard.card200k em{background:#89278c;}
+.boxcard .imgcard.card300k em{background:#e41a4a;}
+.boxcard .imgcard.card500k em{background:#1576bb;}
+.boxcard .imgcard.card1000k em{background:#f57722;}
+.boxcard .imgcard.card2000k em{background:#3b9a46;}
+.boxcard .imgcard.card5000k em{background:#e91d26}
 
 .coltotal{font-size:18px; padding-top:3%;}
 .coltotal span{color:#ec2327; font-weight:bold; font-size:24px;}
@@ -255,7 +267,9 @@ table .bgwhitetbl.end td, table .bggreytbl.end td{border-bottom:none;}
 
 .boxpayment{ margin-bottom:25px; padding:3% 15%;}
 .boxpayment .row{ margin-bottom:10px;}
-.boxpayment .row_st, .boxpayment .row_nd{width:15%;}
+.boxpayment .row_st{width:15%;}
+.boxpayment .row_nd{width:20%;}
+.boxpayment .row_nd .fee{color: #43B649}
 .boxpayment .row_rd{width:60%; color:#666;}
 .boxpayment p, .boxinfo p{font-size:14px; font-weight:bold; margin-bottom:10px;}
 .boxpayment ul{margin-left:-2%;width:100%; display:block;}
@@ -279,6 +293,27 @@ table .bgwhitetbl.end td, table .bggreytbl.end td{border-bottom:none;}
 .bxnotify.warning{color:#bc8e50; background:#fdf8e4; border-color:#f4f1e2;}
 
 .loading{width:38px; height:38px; background:url(../images/loading.gif) no-repeat; display:inline-block; vertical-align:bottom;}
+.tableprice {text-align:left;border:1px solid #ddd;margin:20px 0; background:#fff;}
+.tableprice th, .tableprice td {padding:10px; font-size:14px;}
+.tableprice td {border:1px solid #ddd;text-align:center; vertical-align:middle;}
+.tableprice td:nth-of-type(2n){width:23%;}
+.tableprice .header {background: #ddd; font-weight:bold;text-align:center}
+.tableprice .headline {border-top:1px solid #ddd}
+.tableprice b {font-size:16px}
+.esale_info_note li {margin-top:5px}
+.tableprice td.txtleft{text-align:left; padding-left:30px;}
+ul.tabprice{margin-bottom:20px;}
+ul.tabprice li{display:block; float:left;}
+ul.tabprice li a{float:left; margin-right:8px;}
+.imgtabprice{width:186px; height:56px; background:url(../images/tab_price.png) no-repeat; display:inline-block;}
+.imgtabprice.tel{background-position:0 0;}
+.imgtabprice.tel:hover, .imgtabprice.game:hover, .imgtabprice.zxu:hover{opacity:0.8;}
+ul.tabprice li a.current .imgtabprice.tel{background-position:0 -56px;}
+.imgtabprice.game{background-position:-186px 0;}
+ul.tabprice li a.current .imgtabprice.game{background-position:-186px -56px;}
+.imgtabprice.zxu{background-position:-372px 0;}
+ul.tabprice li a.current .imgtabprice.zxu{background-position:-372px -56px;}
+ul.tabprice li a.current .imgtabprice.tel:hover, ul.tabprice li a.current .imgtabprice.game:hover, ul.tabprice li a.current .imgtabprice.zxus:hover{opacity:1; cursor:text;}
              
 .boxinfo{padding:3% 15%;}
 .boxinfo .row_st{width:15%;}
